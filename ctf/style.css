@@ -1,7 +1,10 @@
 body {
-background-color: 000000;
-color: A7D129;
+background-color: black;
+color: #A7D129;
 }
+
 h1 {
-background-color: 3E432E;
+background-color: #3E432E;
+color: black;
+text-align: center;
 }
