@@ -1,0 +1,19 @@
+
+body {
+  background-color:black;
+  color:white;
+  text-align:center;
+  font-family:Share Tech Mono;
+  font-size:175%;
+}
+
+h1 {
+  font-size:400%;
+}
+h2 {
+  font-size:200%;
+}
+
+a {
+  color:black;
+}
