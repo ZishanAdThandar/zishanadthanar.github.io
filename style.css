@@ -8,6 +8,10 @@ body {
 	font-size:150%;
 }
 
+img:hover {
+	opacity: 20%;
+}
+
 h1 {
 	background-color: #3E432E;
 	color: black;
