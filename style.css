@@ -9,7 +9,8 @@ body {
 }
 
 img:hover {
-	opacity: 20%;
+	opacity: 50%;
+	filter:brightness(150%);
 }
 
 h1 {
