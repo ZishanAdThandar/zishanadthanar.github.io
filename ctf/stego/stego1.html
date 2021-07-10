@@ -38,10 +38,10 @@
     
 sha256(document.getElementById("flag").value).then(hash => { 
     if (hash==flag) {
-    	document.getElementById("result").innerHTML="Congrats!";
+    	document.getElementById("result").innerHTML="<b>Congrats!<br>You did it.</b>";
     	}
     else {
-    	document.getElementById("result").innerHTML="Failed!";
+    	document.getElementById("result").innerHTML="<b style='color:red;'>Wrong Flag!!<br>Try harder.</b>";
     }});
     }
     </script>
