@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strings || Stegnography 1 || Capture The Flag || Zishan Ahamed Thandar</title>
+<meta charset="UTF-8">
+<meta name="description" content="Capture The Flag">
+<meta name="keywords" content="Hacking, Bug Hunting, Ethical Hacking, CTF, Pentesting, OSCP">
+<meta name="author" content="Zishan Ahamed Thandar">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAMfjAADX6wAA1+sAANALAADf+wAA2xsAANEbAADbGwAA7/cAAPAPAAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Stegnography Challange 1</h1>
+    
+    <h2>Strings</h2>
+    <h3>File: </h3>
+    <a href="./files/strings.zip">Download</a><br>
+    Password is ZishanAdThandar.
+    <h3>Submit flag: </h3>
+    <input id="flag" onchange="check()" oninput="check()" value="" placeholder="Flag">
+    <div id="result"></div>
+    <h3>Flag format: </h3>
+    ZishanAdThandar{} <br>
+    *case sensetive<br>
+    <script> 
+    async function sha256(message) {
+    const msgBuffer = new TextEncoder('utf-8').encode(message);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
+    return hashHex;
+}
+    var flag="93095dc9ce0b32782dbe45cd80d517f6d156f05c3e19179d7abc1db38b1ced16";
+    function check(){
+    
+    
+sha256(document.getElementById("flag").value).then(hash => { 
+    if (hash==flag) {
+    	document.getElementById("result").innerHTML="Congrats!";
+    	}
+    else {
+    	document.getElementById("result").innerHTML="Failed!";
+    }});
+    }
+    </script>
+</body>
+ <footer>
+All rights reserved by ZishanAdThandar.
+</footer> 
+</html>
+
