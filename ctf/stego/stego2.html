@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Strings || Stegnography 1 || Capture The Flag || Zishan Ahamed Thandar</title>
+<title>Steghide || Stegnography 2 || Capture The Flag || Zishan Ahamed Thandar</title>
 <meta charset="UTF-8">
 <meta name="description" content="Capture The Flag">
 <meta name="keywords" content="Hacking, Bug Hunting, Ethical Hacking, CTF, Pentesting, OSCP">
@@ -12,11 +12,11 @@
 </head>
 <body>
     
-    <h1>Stegnography Challange 1</h1>    
-    <h2>Strings</h2>
-    There are always something to hide. But, this time it is hidden by stegnographer. Now, your job is to find it by using your skills.
+    <h1>Stegnography Challange 2</h1>    
+    <h2>Steghide</h2>
+    Our Stegnographer sending a secret message inside an image. Oue job is to find it.
     <h3>File: </h3>
-    <a href="./files/strings.zip">Download</a><br>
+    <a href="./files/steghide.zip">Download</a><br>
     Password is ZishanAdThandar.
     <h3>Submit flag: </h3>
     <input id="flag" onchange="check()" oninput="check()" value="" placeholder="Flag">
@@ -32,7 +32,7 @@
     const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
     return hashHex;
 }
-    var flag="93095dc9ce0b32782dbe45cd80d517f6d156f05c3e19179d7abc1db38b1ced16";
+    var flag="25ab141d4f553d9a41ff4590a112eb01a18adfe48dcc44cc4342ef767720590b";
     function check(){
     
     
