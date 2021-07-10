@@ -4,6 +4,7 @@ body {
 	background-color: black;
 	color: #A7D129;
 	font-size:150%;
+	text-align: center;
 }
 
 h1 {
@@ -16,8 +17,15 @@ h1 {
 h2 {
 	background-color: #616F39;
 	color: black;
-	text-align: center;
 }
+input {
+	width: 80%;
+	background-color: #3E432E;
+	border: 2px solid #A7D129;
+	border-radius: 4px;
+	font-size:150%;
+}
+
 footer {
 	background-color: #3E432E;
 	color: black;
