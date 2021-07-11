@@ -25,11 +25,19 @@ p {
 	text-align:left;
 }
 
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+
 .navbar a {
   background-color: #3E432E;
   color:  black;
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar a:hover {
