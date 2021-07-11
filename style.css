@@ -7,9 +7,7 @@ body {
 	color:#A7D129;
 	font-size:150%;
 }
-.navbar {
-	text-align:center;
-}
+
 img:hover {
 	opacity: 50%;
 	filter:brightness(150%);
@@ -25,11 +23,25 @@ p {
 	text-align:left;
 }
 
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.navbar {
+	text-align:center;
 }
 
 .navbar a {
@@ -61,20 +73,4 @@ footer {
 	color: black;
 	text-align: center;
 }
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
