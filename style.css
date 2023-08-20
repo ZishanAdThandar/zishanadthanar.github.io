@@ -17,7 +17,7 @@ nav {
  background: #282a35;
 }
 label.logo {
-	font-size: 35px;
+	font-size: 30px;
 	color:white;
 	margin: 0 10px;
 	line-height: 80px;
@@ -68,18 +68,19 @@ nav ul li a.active:hover {
 }
 
 
-@media(max-width: 400px){
+@media(max-width: 600px){
 	label.logo{
 		font-size: 18px;
-		margin: 0px 50px;
+		margin: 0;
 	}
 }
 
 
-@media(max-width: 600px){
+@media(max-width: 885px){
 	label.logo{
-		font-size:30px;
-		margin: 0px 70px;
+		font-size:20px;
+		margin: 0;
+		
 	}
 	#checkbtn{
 		display: block;
@@ -96,7 +97,7 @@ nav ul li a.active:hover {
 	nav ul li {
 		display: block;
 		text-align: center;
-		line-height: 40px;
+		line-height: 20px;
 	}
 }
 
