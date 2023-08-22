@@ -3,8 +3,9 @@
 body {
 	width: 100%;
 	height: 100%;
-	background-color:#1d2a35;
-	color: #A7D129;/*white;/*;*/
+	background-color: #1d2a35;
+	color: #A7D129;
+	/*white;/*;*/
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5em;
 }
@@ -13,35 +14,39 @@ body {
 /* NAVBAR STARTS HERE */
 
 nav {
- width: 100%;
- height: 80px;
- background: #282a35;
+	width: 100%;
+	height: 80px;
+	background: #282a35;
 }
+
 label.logo {
 	font-size: 30px;
-	color:white;
+	color: white;
 	margin: 0 10px;
 	line-height: 80px;
 }
+
 nav ul {
 	float: right;
-    list-style-type: none;
+	list-style-type: none;
 }
 
 nav ul li {
 	display: inline-block;
-    color: #f2f2f2;
-    transition: transform 0.3s;
-    background: #1f2029;
+	color: #f2f2f2;
+	transition: transform 0.3s;
+	background: #1f2029;
 }
 
 nav ul li:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
-nav ul li a:visited{
+
+nav ul li a:visited {
 	color: white;
 }
-nav ul li a{
+
+nav ul li a {
 	text-decoration: none;
 	color: White;
 	font-size: 20px;
@@ -49,13 +54,16 @@ nav ul li a{
 	padding: 8px 20px;
 	background: #1f2029;
 }
-nav ul li.active{
+
+nav ul li.active {
 	background: #050505;
 }
+
 nav ul li a.active:hover {
 	background: #050505;
 }
-#checkbtn{
+
+#checkbtn {
 	float: right;
 	line-height: 80px;
 	margin-right: 10px;
@@ -63,75 +71,150 @@ nav ul li a.active:hover {
 	color: white;
 	display: none;
 }
+
 #check {
 	display: none;
 }
-#check:checked ~ ul{
-	left:0px;
+
+#check:checked~ul {
+	left: 0px;
 }
 
 
-@media(max-width: 600px){
-	label.logo{
+@media(max-width: 600px) {
+	label.logo {
 		font-size: 18px;
 		margin: 0;
 	}
 }
 
 
-@media(max-width: 885px){
-	label.logo{
-		font-size:20px;
+@media(max-width: 885px) {
+	label.logo {
+		font-size: 20px;
 		margin: 0;
-		
+
 	}
-	#checkbtn{
+
+	#checkbtn {
 		display: block;
 	}
+
 	nav ul {
 		width: 100%;
 		height: 100vh;
 		background-color: #1f2029;
-		position:fixed;
+		position: fixed;
 		top: 80px;
 		left: -110%;
 		transition: 0.5s;
 	}
+
 	nav ul li {
 		display: block;
 		text-align: center;
-		line-height: 20px;
+		line-height: 1em;
 	}
 }
 
 /* NAVBAR ENDS HERE */
 
+
+/*  -------------Testimonials---------------- */
+
+.testi {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Add this line to enable wrapping */
+}
+
+.testi1, .testi2, .testi3, .testi4, .testi5 {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  width:250px;
+}
+
+/* -------------Testimonials---------------- */
+
+/*  -------------contact---------------- */
+
+
+#contact {
+  display: flex; /* Set the contact container as a flex container */
+  justify-content: space-between; /* Distribute child elements with space between */
+  align-items: flex-start; /* Align child elements at the start of the cross-axis (top) */
+  flex-flow: row wrap;
+}
+
+.contact-left,.contact-right {
+  flex: 1; /* Equal width distribution for both sections */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding within width */
+}
+
+.contact-left{
+font-size:1em;
+}
+
+input,
+textarea {
+	background-color: #3E432E;
+	border: 2px solid #A7D129;
+	border-radius: 4px;
+	font-size: 1em;
+	width:80%;
+}
+
+input:hover,
+textarea:hover {
+	background-color: #616F39;
+}
+
+button {
+	background: #15202b;
+	color: #a7d129;
+	font-weight: bold;
+	font-size: 1em
+}
+
+.btn.btn2 {
+	display: inline-block;
+	background: #15202b;
+	color: #a7d129;
+	font-weight: bold;
+}
+
+/*  -------------contact end---------------- */
+
+
 /* Typing Demo */
 .wrapper {
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
+	/*This part is important for centering*/
+	display: grid;
+	place-items: center;
 }
 
 .typing-demo {
-  width: 22ch;
-  animation: typing 10s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-size: 2em;
+	width: 22ch;
+	animation: typing 10s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-size: 2em;
 }
 
 @keyframes typing {
-  from {
-    width: 0
-  }
+	from {
+		width: 0
+	}
 }
-    
+
 @keyframes blink {
-  50% {
-    border-color: transparent
-  }
+	50% {
+		border-color: transparent
+	}
 }
 
 
@@ -140,49 +223,38 @@ nav ul li a.active:hover {
 
 img:hover {
 	opacity: 50%;
-	filter:brightness(150%);
+	filter: brightness(150%);
 }
 
 p {
-	text-align:left;
+	text-align: left;
 }
 
 a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
 }
+
 a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
 }
+
 a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
 }
 
 h2 {
-text-align: center;
-background-color: #15202b;
-}
-
-input {
-	width: 80%;
-	background-color: #3E432E;
-	border: 2px solid #A7D129;
-	border-radius: 4px;
-	font-size:150%;
-}
-input:hover {
-	background-color: #616F39;
+	text-align: center;
+	background-color: #15202b;
 }
 
 footer {
 	background-color: #15202b;
 	text-align: center;
 	color: white;
-	text-align: center;
 }
-
