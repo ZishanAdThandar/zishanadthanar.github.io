@@ -7,7 +7,7 @@ body {
 	background-color: #1d2a35;
 	color: #A7D129;
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin: 0;
 }
 
@@ -147,7 +147,7 @@ color: pink;
 /* -------------Testimonials---------------- */
 
 /*  -------------contact---------------- */
-
+.contact-left a:link{color:pink;}
 
 #contact {
   display: flex; /* Set the contact container as a flex container */
@@ -164,6 +164,10 @@ color: pink;
 
 .contact-left{
 font-size:1em;
+}
+@media(max-width: 850px) {
+#contact {
+  display: inline; }
 }
 
 input,
@@ -185,13 +189,6 @@ button {
 	color: #a7d129;
 	font-weight: bold;
 	font-size: 1em
-}
-
-.btn.btn2 {
-	display: inline-block;
-	background: #15202b;
-	color: #a7d129;
-	font-weight: bold;
 }
 
 
