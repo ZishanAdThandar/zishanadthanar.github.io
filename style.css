@@ -109,7 +109,7 @@ nav ul li a.active:hover {
 		background-color: #1f2029;
 		position: fixed;
 		top: 3.5em;
-		left: -110%;
+		left: -120%;
 		transition: 0.5s;
 	}
 
@@ -122,6 +122,19 @@ nav ul li a.active:hover {
 
 /* NAVBAR ENDS HERE */
 
+/* Links */
+
+.linkexternal {
+display: inline-block;
+border-style: solid;
+border-radius:25px;
+padding: 0px 5px;
+font-size: 1em;
+}
+.linkexternal a{
+color: pink;
+}
+/* Links */
 
 /*  -------------Testimonials---------------- */
 
@@ -136,9 +149,10 @@ nav ul li a.active:hover {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
-  width:250px;
 }
-
+@media(max-width: 850px) {
+.testi {display: inline;}
+}
 /* -------------Testimonials---------------- */
 
 /*  -------------contact---------------- */
@@ -194,36 +208,6 @@ button {
 /*  -------------contact end---------------- */
 
 
-/* Typing Demo */
-.wrapper {
-	/*This part is important for centering*/
-	display: grid;
-	place-items: center;
-}
-
-.typing-demo {
-	width: 22ch;
-	animation: typing 10s steps(22), blink .5s step-end infinite alternate;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 3px solid;
-	font-size: 2em;
-}
-
-@keyframes typing {
-	from {
-		width: 0
-	}
-}
-
-@keyframes blink {
-	50% {
-		border-color: transparent
-	}
-}
-
-
-/* TYping Demo */
 
 
 img:hover {
@@ -263,3 +247,7 @@ footer {
 	text-align: center;
 	color: white;
 }
+
+
+
+
