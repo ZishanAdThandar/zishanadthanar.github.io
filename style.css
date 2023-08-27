@@ -84,13 +84,6 @@ nav ul li a.active:hover {
 }
 
 
-@media(max-width: 600px) {
-	label.logo {
-		font-size: 1.5em;
-		margin: 0;
-	}
-}
-
 
 @media(max-width: 885px) {
 	label.logo {
@@ -131,7 +124,7 @@ border-radius:25px;
 padding: 0px 5px;
 font-size: 1em;
 }
-.linkexternal a{
+.linkexternal a:link{
 color: pink;
 }
 /* Links */
