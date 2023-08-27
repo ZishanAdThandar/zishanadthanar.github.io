@@ -150,6 +150,7 @@ nav ul li a.active:hover {
   padding: 0px 5px;
   font-size: 1em;
   margin-top: 0.5em;
+  border-color: yellow;
 }
 
 .linkexternal a:link {
@@ -165,6 +166,7 @@ nav ul li a.active:hover {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  border-color: yellow;
   /* Add this line to enable wrapping */
 }
 
@@ -191,6 +193,7 @@ nav ul li a.active:hover {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  border-color: yellow;
   /* Add this line to enable wrapping */
 }
 
@@ -308,6 +311,7 @@ a:hover {
 h2 {
   text-align: center;
   background-color: #15202b;
+  color: #77fc41;
 }
 
 footer {
