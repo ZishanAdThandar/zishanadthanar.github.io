@@ -121,12 +121,34 @@ border-style: solid;
 border-radius:25px;
 padding: 0px 5px;
 font-size: 1em;
+margin-top: 0.5em;
 }
 .linkexternal a:link{
 color: pink;
 }
 /* Links */
 
+/*  -------------Projects---------------- */
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Add this line to enable wrapping */
+}
+
+.proj {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+border-style: solid;
+border-radius:25px;
+height:100%;
+}
+@media(max-width: 850px) {
+.proj {display: inline;}
+}
+/* -------------Projects---------------- */
 /*  -------------Testimonials---------------- */
 
 .testi {
@@ -140,6 +162,9 @@ color: pink;
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+border-style: solid;
+border-radius:25px;
+height:100%;
 }
 @media(max-width: 850px) {
 .testi {display: inline;}
@@ -155,8 +180,9 @@ color: pink;
   align-items: flex-start; /* Align child elements at the start of the cross-axis (top) */
   flex-flow: row wrap;
 }
-
+.contact-left{}
 .contact-left,.contact-right {
+text-align:center;
   flex: 1; /* Equal width distribution for both sections */
   padding: 20px; /* Add padding for spacing */
   box-sizing: border-box; /* Include padding within width */
