@@ -6,7 +6,7 @@
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="Hacking, Bug Hunting, Ethical Hacking, CTF, Cyber Security, Cyber Sec, OSCP">
   <meta name="author" content="Zishan Ahamed Thandar">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJlSURBVFiF1dYxiFxVFAbg785OgrDubpGgLAlWC9HOKVIIdmkWG6vAkqRJsYKCYKHFFqIgYhOwEiGCTYi2sVFIYFMku5BmIWyzgo2rshAUdpdxC4Uci3dHHuPMe2/mjUUO/Mzj3HvO+c+955y5KSJMIimlU7iCqzid1X/hNr6JiL8nchgRjYB5vId9xBjs5z3zjf02DD6HzYrAw9jE3CwJ3Jgg+AA3ZkIAa1MEH2CtFQEs4rAFgUMsVMXo1NToW1iq2VMlS1iv3FGR/Sn80iDLOvyM7rg43Qpuazhf5qo40t/xR+l3kGkZL+L5vPYSLuPbUUHSuEGUUnqAP7GFh3gUEScVhMu2CRdwMSNFxLuNCWQHKSKeDul7OIszJXRwnHGEo4i424QoKmvgBVzDLVzMusfq73wn772EHcUMWZ24DXG/5PTzrPugAYH3894vSrrNaQi8U3LwGxYUI/leRfDv85Us4aCkf7sxAfTwMbaHnN9BwnP4KN/5YK2PDxX/jgnfDdluZ5+9SgI5yycVGX4lT7ac6QW8jE7J/ssK+ydYrCLwSYM7/hXXsZKz7WQS6/mq6uw/HUkAy4q+n2TK9aewOcG5UQRuTuioDb4exE0RIaX0CnYVVU7xvPrJbGVF8YyDp3g1InYH2d8ZYjh2cEwLrA7F+CEidFNKr+PNUZRTSp8paqONHETExgj9akrpEv/t939PAHsj1ibF3pgTCOx08FrLDNtIr+5F9L9LWwJbGVNL1YuoTg7wRv7eM2WxdvHjCH2/ge0yNkrfddIfGaumd2fWBePwzBdha6krwsFDs40cVy3+A5t3zXzl4Sf6AAAAAElFTkSuQmCC" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -29,6 +29,25 @@
       </ul>
     </nav>
   </header>
+  <script>
+  // JavaScript code to close the mobile menu after clicking a link
+document.addEventListener("DOMContentLoaded", function() {
+  const checkbox = document.getElementById("check");
+  const navUl = document.querySelector("nav ul");
+
+  if (checkbox && navUl) {
+    const navLinks = navUl.querySelectorAll("li a");
+    
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        checkbox.checked = false; // Close the mobile menu
+      });
+    });
+  }
+});
+
+  
+  </script>
   
       <p>
          <!--  <img src="https://i.imgur.com/L2eLwba.jpg" width="15%" height="15%" align="right">-->
