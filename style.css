@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #030209;
-  color: DarkGreen;;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 1.3em;
   margin: 0;
@@ -26,7 +26,7 @@ label.logo {
   color: white;
   margin: 0 10px;
   line-height: 80px;
-  color: magenta;
+  color: orange;
 }
 
 nav ul {
@@ -312,7 +312,7 @@ a:hover {
 h2 {
   text-align: center;
   background-color: #15202b;
-  color: #77fc41;
+  color: DarkGreen;
 }
 
 footer {
