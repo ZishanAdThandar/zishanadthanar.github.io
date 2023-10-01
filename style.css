@@ -135,8 +135,9 @@ nav ul li a.active:hover {
     background-color: #1f2029;
     position: fixed;
     top: 3.5em;
-    left: -120%;
+    left: -100%;
     transition: 0.5s;
+    padding: 0 0;
   }
 
   nav ul li {
