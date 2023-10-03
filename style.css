@@ -61,7 +61,7 @@ label.logo {
   color: white;
   margin: 0 10px;
   line-height: 80px;
-  color: orange;
+  color: green;
 }
 
 nav ul {
@@ -333,13 +333,8 @@ p {
   text-align: left;
 }
 
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
 
-a:visited {
+a:link, a:visited {
   color: pink;
   background-color: transparent;
   text-decoration: none;
@@ -354,12 +349,18 @@ a:hover {
 h2 {
   text-align: center;
   background-color: #15202b;
-  color: DarkGreen;
+  color: #28a745;
 }
 
 footer {
   background-color: #15202b;
   text-align: center;
-  color: white;
+  color: #28a745;
+}
+
+
+
+.contact-left a:link, .contact-left a:visited {
+  color: #007bff;
 }
 
