@@ -200,6 +200,38 @@ nav ul li a.active:hover {
 
 /* Links */
 
+/*  -------------Services---------------- */
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2px;
+  /* Add this line to enable wrapping */
+}
+
+.service{
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: yellow;
+  margin-bottom: 1px;
+  min-height: 12em;
+}
+
+@media (max-width: 850px) {
+  .services {
+    display: inline;
+  }
+  .service {min-height: 0em;}
+}
+
+/* -------------Services---------------- */
+
+
 /*  -------------Projects---------------- */
 
 .projects {
@@ -234,6 +266,7 @@ nav ul li a.active:hover {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 2px;
   /* Add this line to enable wrapping */
 }
 
@@ -247,22 +280,27 @@ nav ul li a.active:hover {
   box-sizing: border-box;
   border-style: solid;
   border-radius: 25px;
-  height: 100%;
   border-color: yellow;
+  margin-bottom: 1px;
+  min-height: 12em;
 }
 
 @media (max-width: 850px) {
   .testi {
     display: inline;
   }
+  .testi1, .testi2, .testi3, .testi4, .testi5 {min-height: 0em;}
 }
 
 /* -------------Testimonials---------------- */
 
 /*  -------------contact---------------- */
-.contact-left a:link {
-  color: pink;
+
+
+.contact-left a:link, .contact-left a:visited {
+  color: #007bff;
 }
+
 
 #contact {
   display: flex;
@@ -360,7 +398,37 @@ footer {
 
 
 
-.contact-left a:link, .contact-left a:visited {
-  color: #007bff;
-}
+
+
+/* BootStrap colors */
+
+.text-primary {color: #007bff;}
+.text-secondary {color: #6c757d;}
+.text-success {color: #28a745;}
+.text-danger {color: #dc3545;}
+.text-warning {color: #ffc107;}
+.text-info {color: #17a2b8;}
+.text-light {color: #f8f9fa;}
+.text-dark {color: #343a40;}
+.text-muted {color: #6c757d;}
+.text-white {color: #ffffff;}
+
+.bg-primary {background-color: #007bff;}
+.bg-secondary {background-color: #6c757d;}
+.bg-success {background-color: #28a745;}
+.bg-danger {background-color: #dc3545;}
+.bg-warning {background-color: #ffc107;}
+.bg-info {background-color: #17a2b8;}
+.bg-light {background-color: #f8f9fa;}
+.bg-dark {background-color: #343a40;}
+.bg-muted {background-color: #6c757d;}
+.bg-white {background-color: #ffffff;}
+
+
+
+
+
+
+
+
 
