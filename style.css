@@ -219,7 +219,7 @@ nav ul li a.active:hover {
   border-radius: 25px;
   border-color: yellow;
   margin-bottom: 1px;
-  min-height: 12em;
+  min-height: 14em;
 }
 
 @media (max-width: 850px) {
@@ -227,6 +227,23 @@ nav ul li a.active:hover {
     display: inline;
   }
   .service {min-height: 0em;}
+}
+
+a.contactbutton:link, a.contactbutton:visited {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 0px 5px;
+  font-size: 1em;
+  margin-top: 0.5em;
+  font-weight:bold;
+  color:#dc3545;
+  border-color: #dc3545;
+ /* background-color: #ffc107;*/
+  transition: 0.3s;
+}
+a.contactbutton:hover{
+  transform: scale(1.2);
 }
 
 /* -------------Services---------------- */
