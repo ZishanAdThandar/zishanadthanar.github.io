@@ -285,24 +285,19 @@ button {
   -------------contact end---------------- */
   
   /* Custom styles for hacker theme */
-.container {
-  color: #0f0; /* Text color */
-}
 
  .contact-right input, .contact-right textarea, .contact-right button {
   background-color: #000;
   color: #0f0; /* Text color */
   border: 1px solid #0f0; /* Border color */
 }
-
-.contact-left a:hover, .contact-right input:focus, .contact-right textarea:focus, .contact-right button:hover {
+.contact-right input:focus, .contact-right textarea:focus, .contact-right button:hover {
   background-color: #0f0;
   color: #000; /* Text color on hover */
 }
 
 /* Additional styles can be added for specific elements */
 
-  
   
 
 img:hover {
