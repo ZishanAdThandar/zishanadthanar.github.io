@@ -34,7 +34,27 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-
+    /* NAVBAR START Styles */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5) !important; /* Navbar background color with 50% opacity */
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #00ff00 !important;
+      transition: transform 0.3s ease; /* Transition for link zoom effect */
+      padding: 8px 15px;
+      border: 1px solid #00ff00;
+      border-radius: 5px;
+    }
+    .navbar-brand:hover,
+    .navbar-nav .nav-link:hover {
+      color: #fff !important;
+      transform: scale(1.05); /* Zoom effect on hover */
+      background-color: #00ff00;
+      text-decoration: none; /* Remove underline on hover */
+    }
+/* NAVBAR END Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -48,103 +68,7 @@ body {
   cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAABQAAAAQAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAACAAAAAQAAAAAAAAACAAAABQAAAAgAAAAJAAAABwAAAAUAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAABAAAAAUAAAADAAAAAwAAAAsAAAAUAAAAFwAAABQAAAANAAAACAAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAYAAAAHAAAABwAAAAYAAAAMAAAAIQAAACwAAAAxAAAAJQAAABcAAAALAAAABQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAQAAAAFQAAABMAAAANAAAADAAAABgAAAA4AAAAVQAAAFgAAAA+AAAAHgAAAAwAAAAFAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAACUAAAAtAAAAJAAAABcAAAAVAAAALwAAAFUAAAB3AAAAdAAAAFIAAAApAAAADAAAAAYAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjAAAARAAAAFYAAABEAAAAKgAAACkA/yL/AP8i/wAAAIYAAAB6AAAAVQAAACkAAAAMAAAABwAAAAQAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQAAABZAAAAeAAAAGUAAABHAP8i/wAAAP8AAAD/AP8i/wAAAHIAAABKAAAAIwAAABEAAAAKAAAABgAAAAMAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/yL/AP8i/wAAAGEAAACGAAAAfQAAAGcA/yL/AAAA/wAAAP8A/yL/AAAAZwAAAEMAAAAmAAAAHgAAABQAAAAJAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Iv8AAAD/AP8i/wAAAIsAAACKAP8i/wAAAP8AAAD/AP8i/wAAAIEAAABpAAAAUAAAAEEAAAAwAAAAHQAAAAoAAAAFAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8i/wAAAP8AAAD/AP8i/wAAAI0A/yL/AAAA/wAAAP8A/yL/AAAAgwAAAHgAAABsAAAAYwAAAEcAAAAoAAAACQAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/yL/AAAA/wAAAP8AAAD/AP8i/wAAAP8AAAD/AP8i/wAAAI0AAACKAAAAhgAAAH4AAABvAAAASwAAACYAAAAHAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Iv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AP8i/wD/Iv8A/yL/AP8i/wAAAF8AAAA4AAAAFwAAAAUAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8i/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A/yL/AAAAPgAAACYAAAAOAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/yL/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AP8i/wAAAD4AAAAoAAAADwAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Iv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wD/Iv8AAAA+AAAAKAAAAA8AAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8i/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A/yL/AAAAPgAAACgAAAAPAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/yL/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AP8i/wAAAD4AAAAoAAAADwAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Iv8AAAD/AAAA/wAAAP8AAAD/AAAA/wD/Iv8AAAA+AAAAKAAAAA8AAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8i/wAAAP8AAAD/AAAA/wAAAP8A/yL/AAAAPQAAACcAAAAPAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/yL/AAAA/wAAAP8AAAD/AP8i/wAAAD0AAAAnAAAADwAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Iv8AAAD/AAAA/wD/Iv8AAAA8AAAAJgAAAA8AAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8i/wAAAP8A/yL/AAAAOAAAACQAAAANAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/yL/AP8i/wAAABYAAAAkAAAACwAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Iv8AAAAFAAAACQAAAAkAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////////////////////////////////////////4////8P///LD///wA///8AP///AB///wAP//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8='), auto; 
 }
 
-/* NAVBAR STARTS HERE */
 
-nav {
-  width: 100%;
-  height: 3.5em;
-  background: #19203a;
-}
-
-label.logo {
-  font-size: 1.3em;
-  color: white;
-  margin: 0 10px;
-  line-height: 80px;
-  color: green;
-}
-
-nav ul {
-  float: right;
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-  transition: transform 0.3s;
-  background: #28a745;
-}
-
-nav ul li:hover {
-  transform: scale(1.2);
-}
-
-
-nav ul li a:link,nav ul li a:visited  {
-  text-decoration: none;
-  color: White;
-  font-size: 20px;
-  text-transform: capitalize;
-  padding: 8px 20px;
-  background: #28a745;
-}
-
-nav ul li.active {
-  background: #050505;
-}
-
-nav ul li a.active:hover {
-  background: #050505;
-}
-
-#checkbtn {
-  float: right;
-  line-height: 80px;
-  margin-right: 10px;
-  font-size: 30px;
-  color: white;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-#check:checked ~ ul {
-  left: 0;
-}
-
-@media (max-width: 885px) {
-  label.logo {
-    font-size: 1.5em;
-    margin: 0;
-  }
-
-  #checkbtn {
-    display: block;
-  }
-
-  nav ul {
-    z-index:10;
-    width: 100%;
-    height: 100vh;
-    background-color: #28a745;
-    position: fixed;
-    top: 3.5em;
-    left: -100%;
-    transition: 0.5s;
-    padding: 0 0;
-  }
-
-  nav ul li {
-    z-index:10;
-    display: block;
-    text-align: center;
-    line-height: 1.5em;
-  }
-}
-
-/* NAVBAR ENDS HERE */
 
 /* Introduction */
 
@@ -189,42 +113,22 @@ nav ul li a.active:hover {
   margin-top: 0.5em;
   border-color: yellow;
 }
-
-.linkexternal a:link {
-  color: pink;
+    .linkexternal:hover {
+      background-color: #ffc107; /* Change hover background color as needed */
+      color: #fff; /* Change hover text color as needed */
+    }
+.linkexternal a:link, .linkexternal a:visited, .linkexternal a:hover, .linkexternal a:active {
+  text-decoration: none; 
 }
 
 /* Links */
 
 /*  -------------Services---------------- */
-
-.services {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2px;
-  /* Add this line to enable wrapping */
-}
-
-.service{
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-radius: 25px;
-  border-color: yellow;
-  margin-bottom: 1px;
-  min-height: 14em;
-}
-
-@media (max-width: 850px) {
-  .services {
-    display: inline;
-  }
-  .service {min-height: 0em;}
-}
-
+    .card {
+      background-color: transparent !important; /* Make card background transparent */
+      border: none !important; /* Remove border 
+    }
+    
 a.contactbutton:link, a.contactbutton:visited {
   display: inline-block;
   border-style: solid;
@@ -272,7 +176,7 @@ a.contactbutton:hover{
 }
 
 /* -------------Projects---------------- */
-/*  -------------Testimonials---------------- */
+/*  -------------Testimonials---------------- 
 
 .testi {
   display: flex;
@@ -280,9 +184,14 @@ a.contactbutton:hover{
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2px;
-  /* Add this line to enable wrapping */
+  /* Add this line to enable wrapping 
 }
-
+.testim { 
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 1px;
+  min-height: 12em;
+  }
 .testi1,
 .testi2,
 .testi3,
@@ -305,9 +214,9 @@ a.contactbutton:hover{
   .testi1, .testi2, .testi3, .testi4, .testi5 {min-height: 0em;}
 }
 
-/* -------------Testimonials---------------- */
+ -------------Testimonials---------------- */
 
-/*  -------------contact---------------- */
+/*  -------------contact---------------- 
 
 
 .contact-left a:link, .contact-left a:visited {
@@ -317,11 +226,11 @@ a.contactbutton:hover{
 
 #contact {
   display: flex;
-  /* Set the contact container as a flex container */
+  /* Set the contact container as a flex container 
   justify-content: space-between;
-  /* Distribute child elements with space between */
+  /* Distribute child elements with space between 
   align-items: flex-start;
-  /* Align child elements at the start of the cross-axis (top) */
+  /* Align child elements at the start of the cross-axis (top) 
   flex-flow: row wrap;
 }
 
@@ -332,11 +241,11 @@ a.contactbutton:hover{
 .contact-right {
   text-align: center;
   flex: 1;
-  /* Equal width distribution for both sections */
+  /* Equal width distribution for both sections 
   padding: 20px;
-  /* Add padding for spacing */
+  /* Add padding for spacing 
   box-sizing: border-box;
-  /* Include padding within width */
+  /* Include padding within width 
 }
 
 .contact-left {
@@ -373,13 +282,34 @@ button {
   font-size: 1em;
 }
 
-/*  -------------contact end---------------- */
+  -------------contact end---------------- */
+  
+  /* Custom styles for hacker theme */
+.container {
+  color: #0f0; /* Text color */
+}
+
+ .contact-right input, .contact-right textarea, .contact-right button {
+  background-color: #000;
+  color: #0f0; /* Text color */
+  border: 1px solid #0f0; /* Border color */
+}
+
+.contact-left a:hover, .contact-right input:focus, .contact-right textarea:focus, .contact-right button:hover {
+  background-color: #0f0;
+  color: #000; /* Text color on hover */
+}
+
+/* Additional styles can be added for specific elements */
+
+  
+  
 
 img:hover {
   opacity: 50%;
   filter: brightness(150%);
 }
-
+/*
 p {
   text-align: left;
 }
@@ -397,51 +327,11 @@ a:hover {
   text-decoration: none;
 }
 
+
 h2 {
   text-align: center;
   background-color: #15202b;
   color: #28a745;
 }
-
-footer {
-  background-color: #15202b;
-  text-align: center;
-  color: #28a745;
-}
-
-
-
-
-
-/* BootStrap colors */
-
-.text-primary {color: #007bff;}
-.text-secondary {color: #6c757d;}
-.text-success {color: #28a745;}
-.text-danger {color: #dc3545;}
-.text-warning {color: #ffc107;}
-.text-info {color: #17a2b8;}
-.text-light {color: #f8f9fa;}
-.text-dark {color: #343a40;}
-.text-muted {color: #6c757d;}
-.text-white {color: #ffffff;}
-
-.bg-primary {background-color: #007bff;}
-.bg-secondary {background-color: #6c757d;}
-.bg-success {background-color: #28a745;}
-.bg-danger {background-color: #dc3545;}
-.bg-warning {background-color: #ffc107;}
-.bg-info {background-color: #17a2b8;}
-.bg-light {background-color: #f8f9fa;}
-.bg-dark {background-color: #343a40;}
-.bg-muted {background-color: #6c757d;}
-.bg-white {background-color: #ffffff;}
-
-
-
-
-
-
-
-
+*/
 
