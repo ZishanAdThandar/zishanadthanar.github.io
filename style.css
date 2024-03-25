@@ -34,6 +34,7 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+  
     /* NAVBAR START Styles */
     .navbar {
       background-color: rgba(0, 0, 0, 0.5) !important; /* Navbar background color with 50% opacity */
@@ -126,22 +127,9 @@ body {
 /*  -------------Services---------------- */
     .card {
       background-color: transparent !important; /* Make card background transparent */
-      border: none !important; /* Remove border 
+      border: none !important; 
     }
     
-a.contactbutton:link, a.contactbutton:visited {
-  display: inline-block;
-  border-style: solid;
-  border-radius: 25px;
-  padding: 0px 5px;
-  font-size: 1em;
-  margin-top: 0.5em;
-  font-weight:bold;
-  color:#dc3545;
-  border-color: #dc3545;
- /* background-color: #ffc107;*/
-  transition: 0.3s;
-}
 a.contactbutton:hover{
   transform: scale(1.2);
 }
@@ -175,160 +163,25 @@ a.contactbutton:hover{
   }
 }
 
-/* -------------Projects---------------- */
-/*  -------------Testimonials---------------- 
 
-.testi {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2px;
-  /* Add this line to enable wrapping 
-}
-.testim { 
-  flex: 1;
-  padding: 20px;
-  margin-bottom: 1px;
-  min-height: 12em;
-  }
-.testi1,
-.testi2,
-.testi3,
-.testi4,
-.testi5 {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-radius: 25px;
-  border-color: yellow;
-  margin-bottom: 1px;
-  min-height: 12em;
-}
+/*  -------------contact----------------  */
 
-@media (max-width: 850px) {
-  .testi {
-    display: inline;
-  }
-  .testi1, .testi2, .testi3, .testi4, .testi5 {min-height: 0em;}
-}
-
- -------------Testimonials---------------- */
-
-/*  -------------contact---------------- 
-
-
-.contact-left a:link, .contact-left a:visited {
-  color: #007bff;
-}
-
-
-#contact {
-  display: flex;
-  /* Set the contact container as a flex container 
-  justify-content: space-between;
-  /* Distribute child elements with space between 
-  align-items: flex-start;
-  /* Align child elements at the start of the cross-axis (top) 
-  flex-flow: row wrap;
-}
-
-.contact-left {
-}
-
-.contact-left,
-.contact-right {
-  text-align: center;
-  flex: 1;
-  /* Equal width distribution for both sections 
-  padding: 20px;
-  /* Add padding for spacing 
-  box-sizing: border-box;
-  /* Include padding within width 
-}
-
-.contact-left {
-  font-size: 1em;
-}
-
-@media (max-width: 850px) {
-  #contact {
-    display: inline;
-  }
-}
-
-input,
-textarea {
-  background-color: darkgreen;
-  color:white;
-  border: 2px solid yellow;
-  border-radius: 4px;
-  font-size: 1em;
-  font-weight: bold;
-  width: 80%;
-}
-
-input:hover,
-textarea:hover {
-  background-color: #616f39;
-}
-
-button {
-  background: DarkGreen;
-  color: #a7d129;
-  border-color: yellow;
-  font-weight: bold;
-  font-size: 1em;
-}
-
-  -------------contact end---------------- */
-  
-  /* Custom styles for hacker theme */
-.container {
-  /* color: #0f0; Text color */
-}
  .contact-right input, .contact-right textarea, .contact-right button {
   background-color: #000;
   color: #0f0; /* Text color */
   border: 1px solid #0f0; /* Border color */
 }
-.contact-right input:hover, .contact-right textarea:hover, .contact-right input:focus, .contact-right textarea:focus, .contact-right button:hover {
+.contact-right input:hover, .contact-right textarea:hover, .contact-right button:hover, .contact-right input:focus, .contact-right textarea:focus, .contact-right button:hover {
   background-color: #0f0;
-  color: #000; /* Text color on hover */
+  color: #000;  
 }
 
-/* Additional styles can be added for specific elements */
 
-  
+  /*-------------contact end---------------- */
 
 img:hover {
   opacity: 50%;
   filter: brightness(150%);
 }
-/*
-p {
-  text-align: left;
-}
 
-
-a:link, a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-
-h2 {
-  text-align: center;
-  background-color: #15202b;
-  color: #28a745;
-}
-*/
 
