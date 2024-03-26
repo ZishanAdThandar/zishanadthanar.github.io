@@ -185,3 +185,16 @@ img:hover {
 }
 
 
+/* container load from below */
+
+.load-from-below {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+.load-from-below.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
