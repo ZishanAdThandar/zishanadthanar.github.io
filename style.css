@@ -247,4 +247,11 @@ img:hover {
   transform: translateY(0);
 }
 
+/* CARD mouseover effect */
+.card {
+    transition: transform 0.2s ease;
+}
 
+.card:hover {
+    transform: scale(1.05);
+}
