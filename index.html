@@ -615,7 +615,7 @@ particlesJS("particles-js", {
     addTextWithTyping(initialText, introText);
 </script>
 
-<button title="Scroll to Top." onclick="let interval = setInterval(() => { window.scrollBy(0, -50); if (window.scrollY === 0) clearInterval(interval); }, 15);" class="btn btn-info btn-floating btn-lg position-fixed bottom-0 end-0 m-3"><i class="fa-solid fa-upload"></i></button>
+<button title="Scroll to Top." onmouseover="this.style.transform = 'scale(1.2)'" onmouseout="this.style.transform = 'scale(1)'"  onclick="let interval = setInterval(() => { window.scrollBy(0, -50); if (window.scrollY === 0) clearInterval(interval); }, 15);" class="btn btn-info btn-floating btn-lg position-fixed bottom-0 end-0 m-3"><i class="fa-solid fa-upload"></i></button>
 
 
 
