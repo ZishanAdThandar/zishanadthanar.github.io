@@ -53,7 +53,7 @@
         
     transition: all 1s;
     background: #07a6f1;
-    box-shadow: 0 0 5px #07a6f1, 0 0 20px #07a6f1, 0 0 40px #07a6f1, 0 0 80px #07a6f1;
+    box-shadow: 0 0 2px #07a6f1, 0 0 10px #07a6f1, 0 0 25px #07a6f1, 0 0 50px #07a6f1;
     border:0;
     }
 }
