@@ -56,14 +56,9 @@
     <br>
     <div class="container introduction">
     
-      <!--  <img src="https://i.imgur.com/L2eLwba.jpg" width="15%" height="15%" align="right">--> <img id="intropic" style="opacity: 50%;" src="https://img.freepik.com/premium-vector/hacker-e-sport-logo-style_192351-49.jpg" width="30%" height="30%" align="right"><p class="">Salam! I'm Zishan Ahamed Thandar, and I'm thrilled to welcome you to my journey in cybersecurity. I'm based in Kolkata, India, and I have a special knack for being a Bug Bounty Hunter, Coder, and Ethical Hacker. What's my secret sauce? Well, my background in Automobile Engineering gives me a unique edge in understanding the intricacies of digital systems.<br>
+      <!--  <img src="https://i.imgur.com/L2eLwba.jpg" width="15%" height="15%" align="right">--> <img id="intropic" style="opacity: 50%;" src="https://img.freepik.com/premium-vector/hacker-e-sport-logo-style_192351-49.jpg" width="30%" height="30%" align="right">
+<p class="intro-text"></p> 
 
-Imagine this portfolio as a showcase of my achievements and insights. It's like a scrapbook of my adventures where I spot weaknesses in digital stuff, sort out problems, and keep up with the ever-changing world of digital security. You'll find stories of how I cracked codes, plugged up gaps, and learned loads along the way.<br>
-
-The digital world can be a tricky place, and I'm on a mission to make it safer for all of us. So, whether you're a fellow enthusiast, a future collaborator, or just curious about what makes the online world tick securely, I'm thrilled to have you with me. Let's dive into the world of programming, find smart solutions, and make the internet a friendlier place. Thanks for being part of this exciting journey!
-    </p>
-    </div>
-    
     
     <br>
     <!-- Connect -->
@@ -579,6 +574,44 @@ particlesJS("particles-js", {
   document.querySelectorAll('.load-from-below').forEach(function(container) {
     observer.observe(container);
   });
+</script>
+
+
+<script>
+  // Define the initial text
+    var initialText = "Salam!<br> I'm Zishan Ahamed Thandar, and I'm thrilled to welcome you to my journey in cybersecurity. I'm based in Kolkata, India, and I have a special knack for being a Bug Bounty Hunter, Coder, and Ethical Hacker. What's my secret sauce? Well, my background in Automobile Engineering gives me a unique edge in understanding the intricacies of digital systems. \rImagine this portfolio as a showcase of my achievements and insights. It's like a scrapbook of my adventures where I spot weaknesses in digital stuff, sort out problems, and keep up with the ever-changing world of digital security. You'll find stories of how I cracked codes, plugged up gaps, and learned loads along the way. \rThe digital world can be a tricky place, and I'm on a mission to make it safer for all of us. So, whether you're a fellow enthusiast, a future collaborator, or just curious about what makes the online world tick securely, I'm thrilled to have you with me. Let's dive into the world of programming, find smart solutions, and make the internet a friendlier place. Thanks for being part of this exciting journey!";
+    var introText = document.querySelector('.intro-text');
+
+    // Insert the initial text with opacity 0
+    introText.textContent = initialText;
+
+    // Adjust the paragraph height to fix it
+    var height = introText.offsetHeight;
+    introText.style.height = height + 'px';
+
+    // Remove the initial text
+    introText.textContent = '';
+
+    // Function to add text with typing effect
+    function addTextWithTyping(text, element) {
+        var index = 0;
+        var typingInterval = setInterval(function() {
+            if (text[index] === '<') {
+                var endIndex = text.indexOf('>', index);
+                element.innerHTML += text.substring(index, endIndex + 1);
+                index = endIndex + 1;
+            } else {
+                element.textContent += text[index];
+                index++;
+            }
+            if (index === text.length) {
+                clearInterval(typingInterval);
+            }
+        }, 50); // Typing speed (milliseconds)
+    }
+
+    // Add text with typing effect
+    addTextWithTyping(initialText, introText);
 </script>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
