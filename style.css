@@ -34,8 +34,33 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-  
+
+    /* NAVBAR BRAND Styles */
+    
+.navbar-brand {
+    color: purple;
+    font-weight: bold;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
+        box-shadow: 0 8px 20px rgba(145, 92, 182, 1);*/
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        
+    transition: all 1s;
+    background: #07a6f1;
+    box-shadow: 0 0 5px #07a6f1, 0 0 20px #07a6f1, 0 0 40px #07a6f1, 0 0 80px #07a6f1;
+    border:0;
+    }
+}
+
+
     /* NAVBAR START Styles */
+   
     .navbar {
       background-color: rgba(0, 0, 0, 0.5) !important; /* Navbar background color with 50% opacity */
       font-family: 'Courier New', Courier, monospace;
@@ -117,6 +142,7 @@ body {
     .linkexternal:hover {
       background-color: #ffc107; /* Change hover background color as needed */
       color: #fff; /* Change hover text color as needed */
+	  box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
     }
 .linkexternal a:link, .linkexternal a:visited, .linkexternal a:hover, .linkexternal a:active {
   text-decoration: none; 
@@ -130,9 +156,6 @@ body {
       border: none !important; 
     }
     
-a.contactbutton:hover{
-  transform: scale(1.2);
-}
 
 /* -------------Services---------------- */
 
@@ -166,16 +189,42 @@ a.contactbutton:hover{
 
 /*  -------------contact----------------  */
 
- .contact-right input, .contact-right textarea, .contact-right button {
-  background-color: #000;
-  color: #0f0; /* Text color */
-  border: 1px solid #0f0; /* Border color */
-}
-.contact-right input:hover, .contact-right textarea:hover, .contact-right button:hover, .contact-right input:focus, .contact-right textarea:focus, .contact-right button:hover {
-  background-color: #0f0;
-  color: #000;  
+a.contact button:hover{
+  transform: scale(1.2);
 }
 
+.contact-right input, .contact-right textarea{
+  background-color: rgba(165, 55, 253, 0.5); /* Dark purple with 50% opacity */
+  color: #0f0; /* Green text color */
+  border: 2px solid #A800A8; /* Hacker purple border color */
+  margin: 4px;
+  font-weight: bold;
+}
+
+.contact-right button {
+  background-color: rgba(165, 55, 253, 0.8); /* Black with 50% opacity */
+  border: 2px solid #A800A8; /* Hacker purple border color */
+  color: #fff; /* White text color */
+  font-weight: bold;
+}
+
+.contact-right button:focus, .contact-right button:hover {
+  background-color: rgba(90, 34, 139, 0.9); /* Dark purple hover color with 90% opacity */
+  box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
+}
+
+.contact-right input::placeholder, .contact-right textarea::placeholder {
+  color: rgba(255, 255, 255, 0.9); 
+}
+
+.contact-right input:hover,
+.contact-right textarea:hover,
+.contact-right input:focus,
+.contact-right textarea:focus {
+  background-color: rgba(50, 0, 50, 0.9); /* Dark purple hover color with 90% opacity */
+  color: #fff; /* White text color */
+  box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
+}
 
   /*-------------contact end---------------- */
 
