@@ -254,4 +254,6 @@ img:hover {
 
 .card:hover {
     transform: scale(1.05);
+    border-color: yelllow;
+	box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
 }
