@@ -223,7 +223,7 @@ a.contact button:hover{
 .contact-right textarea:focus {
   background-color: rgba(50, 0, 50, 0.9); /* Dark purple hover color with 90% opacity */
   color: #fff; /* White text color */
-  box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
+  box-shadow: 0 10px 25px rgba(145, 92, 182, .8);
 }
 
   /*-------------contact end---------------- */
