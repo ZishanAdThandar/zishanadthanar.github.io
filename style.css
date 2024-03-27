@@ -249,11 +249,11 @@ img:hover {
 
 /* CARD mouseover effect */
 .card {
-    transition: transform 0.2s ease;
+    transition: transform 0.6s ease, border-color 1s ease, box-shadow 1s ease, background-color 0.6s ease;
 }
-
 .card:hover {
     transform: scale(1.05);
-    border-color: yelllow;
-	box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
+    border-color: #FFFF00 !important; /* not working may be for bootstrap, */
+    box-shadow: 0 8px 20px rgba(145, 92, 182, .7);
+    background-color: rgba(50, 50, 90, 0.3) !important; /* not working may be for bootstrap,  Dark background with 50% opacity */
 }
