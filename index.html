@@ -109,6 +109,23 @@
     
     <!-- Coding Skills -->
 <div class="container load-from-below">
+    <h1 style="color: #00ff00;"><i class="fa-solid fa-flag-checkered"></i> Cyber Security Certificates</h1>
+  <br>
+    <!-- <a title="Python" href="#" target="_blank"><img class="codelogo" src="img/coding/pythonIcon.png" alt=""></a><a title="php" href="#" target="_blank"><img class="codelogo" src="img/coding/phpIcon.png" alt="php"></a><a title="MySQL" href="#" target="_blank"><img class="codelogo" src="img/coding/mysqlIcon.png" alt="MySQL"></a><a title="html5" href="#" target="_blank"><img class="codelogo" src="img/coding/html5Icon.png" alt=""></a><a title="css3" href="#" target="_blank"><img class="codelogo" src style="color: #00ff00;"="img/coding/css3Icon.png" alt="css3"></a><a title="JavaScript" href="#" target="_blank"><img class="codelogo" src="img/coding/jsIcon.jpg" alt="JavaScript"></a> -->
+    <div class="linkexternal">
+      <a href="https://web.archive.org/web/20240407035000/https://codered.eccouncil.org/certificate/9a734562-7963-400b-84b6-4f04d7477bd6?finalAssessment=true&type=1&logged=false" target="_blank">EC-Council Ethical Haking Essentials <i class="fa-solid fa-up-right-from-square"></i>
+      </a>
+    </div>
+
+</div>
+    <!-- Coding Skills -->
+    
+    
+
+    <br><br>
+    
+    <!-- Coding Skills -->
+<div class="container load-from-below">
     <h1 style="color: #00ff00;"><i class="fa-solid fa-terminal"></i> Coding Certificates</h1>
   <br>
     <!-- <a title="Python" href="#" target="_blank"><img class="codelogo" src="img/coding/pythonIcon.png" alt=""></a><a title="php" href="#" target="_blank"><img class="codelogo" src="img/coding/phpIcon.png" alt="php"></a><a title="MySQL" href="#" target="_blank"><img class="codelogo" src="img/coding/mysqlIcon.png" alt="MySQL"></a><a title="html5" href="#" target="_blank"><img class="codelogo" src="img/coding/html5Icon.png" alt=""></a><a title="css3" href="#" target="_blank"><img class="codelogo" src style="color: #00ff00;"="img/coding/css3Icon.png" alt="css3"></a><a title="JavaScript" href="#" target="_blank"><img class="codelogo" src="img/coding/jsIcon.jpg" alt="JavaScript"></a> -->
@@ -557,24 +574,26 @@ particlesJS("particles-js", {
 
 <script>
 	// Container load from below animation JS, css on style
- var options = {
+var options = {
     root: null,
     rootMargin: '0px',
     threshold: 0.2
-  };
+};
 
-  var observer = new IntersectionObserver(function(entries, observer) {
+var observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('loaded');
-        observer.unobserve(entry.target);
-      }
+        if (entry.isIntersecting) {
+            entry.target.classList.add('loaded');
+        } else {
+            entry.target.classList.remove('loaded'); // Remove 'loaded' class when element is not intersecting
+        }
     });
-  }, options);
+}, options);
 
-  document.querySelectorAll('.load-from-below').forEach(function(container) {
+document.querySelectorAll('.load-from-below').forEach(function(container) {
     observer.observe(container);
-  });
+});
+
 </script>
 
 
