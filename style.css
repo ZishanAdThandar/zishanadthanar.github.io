@@ -35,7 +35,7 @@
 }
 
 
-    /* NAVBAR BRAND Styles
+    /* NAVBAR BRAND Styles */
     
 .navbar-brand {
     color: purple;
@@ -46,7 +46,7 @@
 @keyframes glow {
     from {
         /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
-        box-shadow: 0 8px 20px rgba(145, 92, 182, 1);
+        box-shadow: 0 8px 20px rgba(145, 92, 182, 1);*/
     }
     to {
         text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
@@ -57,7 +57,7 @@
     border:0;
     }
 }
- */
+
 
     /* NAVBAR START Styles */
    
