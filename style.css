@@ -37,25 +37,42 @@
 
     /* NAVBAR BRAND Styles */
     
+/* Navbar Glow style */
 .navbar-brand {
-    color: purple;
-    font-weight: bold;
-    animation: glow 1.5s ease-in-out infinite alternate;
+  color: #00ff00;
+  font-weight: bold;
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-        /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
-        box-shadow: 0 8px 20px rgba(145, 92, 182, 1);*/
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-        
-    transition: all 1s;
-    background: #07a6f1;
-    box-shadow: 0 0 2px #07a6f1, 0 0 10px #07a6f1, 0 0 25px #07a6f1, 0 0 50px #07a6f1;
-    border:0;
-    }
+  from {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+}
+
+/* Additional cool effect: Gradient and border animation */
+.navbar-brand {
+  background: linear-gradient(45deg, #00ff00, #ff00ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  border: 2px solid transparent;
+  background-size: 200% 200%;
+  animation: gradient 2s ease infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
