@@ -1,0 +1,76 @@
+Terms and Conditions
+
+By accessing this website and purchasing services from us (“Merchant,” “we,” “us,” or “our”), you agree to these legally binding Terms and Conditions (“Terms”). If you do not agree to these Terms, please refrain from accessing or using the platform. Your continued use of the platform constitutes your acceptance of any updates or changes to these Terms.
+1. Eligibility
+
+By using our platform, you represent and warrant that you have the legal authority to enter into this agreement, and that you are the rightful owner or have explicit legal authorization to order any pentesting services on the system, network, or application in question. Any breach of this requirement will make you, the customer, fully liable for any legal consequences arising from unauthorized use.
+2. Legal Ownership Requirement
+
+Only the legal owner of the application or system is permitted to order pentesting services. You confirm that you have the authority to request such testing. We disclaim any responsibility for unauthorized orders. Any resulting legal complications or disputes arising from unauthorized orders will be solely your responsibility, and you agree to indemnify us from any third-party claims.
+3. One IP Per Pentest or one domainper WAPT Order
+
+Each pentesting service is strictly limited to one IP address per order. Additional IP addresses must be purchased through separate orders. Failure to comply with this will result in suspension of services without refund.
+4. Acknowledgment of Risk
+
+By placing an order for pentesting services, you explicitly acknowledge and agree to the inherent risks involved in penetration testing, including but not limited to potential downtime, performance degradation, or unintended consequences to your systems or data. You assume all risks associated with the testing process, and we will not be held liable for any resulting loss or damage.
+5. Webinar Timing
+
+All webinars, workshops, and training sessions will be scheduled according to Zishan’s time zone. It is your responsibility to ensure that you are available at the designated time. No refunds will be issued for missed sessions due to scheduling conflicts on the customer’s end.
+6. Payment and Refund Policy
+
+Payment for services must be made through our accepted payment methods. All payments are final and non-refundable except as specified in our refund policy. You are responsible for providing accurate payment details. Any fraudulent or unauthorized transactions will result in immediate cancellation of services, and you may be held legally accountable.
+7. Prohibited Actions
+
+You may not use the platform for any unauthorized purposes or commercial endeavors that are not explicitly endorsed by us. Prohibited actions include, but are not limited to:
+
+    Unauthorized collection of user data.
+    Bypassing security features.
+    Interfering with the platform's operations.
+    Using the platform for any illegal or fraudulent activities.
+
+Failure to comply with these prohibitions will result in immediate termination of your account and legal action if necessary.
+8. Limitation of Liability
+
+We expressly disclaim all liability for any losses, damages, or claims resulting from your use of the platform or services. You agree that our maximum liability under this agreement, in any case, will not exceed the total amount paid for the service in question. Any defective service or discrepancy will only entitle you to request a refund or correction, subject to our refund policy.
+9. Indemnification
+
+You agree to indemnify, defend, and hold harmless the Merchant and its affiliates, agents, and employees from any claims, liabilities, damages, or losses arising out of:
+
+    Your breach of these Terms.
+    Your unauthorized use of the platform.
+    Any claims from third parties due to the testing of a system you do not own or are not authorized to test.
+
+10. Dispute Resolution and Governing Law
+
+These Terms are governed by the laws of India. Any disputes will be resolved through arbitration in Bengaluru, in accordance with the Arbitration and Conciliation Act, 1996. The arbitration will be conducted in English, and the decision of the arbitrator will be final and binding. The courts of Bengaluru shall have exclusive jurisdiction over any dispute that requires judicial intervention.
+11. Confidentiality
+
+All parties involved in any dispute or arbitration must maintain confidentiality. No information related to the arbitration may be disclosed to third parties unless required by law.
+12. Updates to Terms
+
+We reserve the right to update and change these Terms and Conditions at any time. It is your responsibility to review these Terms regularly for any updates. Continued use of the platform following such updates constitutes acceptance of the new Terms.
+13. Grievance Redressal
+
+If you have any concerns or complaints regarding a product or service, including issues such as unauthorized transactions or refund requests, you must contact us through the provided support channels. All grievances will be handled in accordance with applicable laws.
+14. Disclaimer
+
+Extensive test or automation could cause disturbance or fatal consiquences, by purchasing our service you agreed to take the risk.
+
+
+    By placing an order or using our services, you confirm that you have read, understood, and agreed to these Terms and Conditions.
+    
+    
+Cancellation Policy
+
+Refunds:
+
+We do not offer refunds for our services.
+
+Cancellations:
+
+Clients may cancel their service before work begins. Once work has commenced, cancellations are not eligible for refunds.
+
+Exceptions:
+
+We reserve the right to cancel services due to unforeseen circumstances or technical limitations. In such cases, clients will be notified, and any payments made will be refunded.
+ 
