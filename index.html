@@ -57,12 +57,47 @@ var t=document.getElementById('ztitleeffect'),e="Zishan Ahamed Thandar",n=0;func
     </header>
     
     <br>
-    <div class="container introduction">
-    
-      <!--  <img src="https://i.imgur.com/L2eLwba.jpg" width="15%" height="15%" align="right">--> <img id="intropic" style="opacity: 50%;" src="https://img.freepik.com/premium-vector/hacker-e-sport-logo-style_192351-49.jpg" width="30%" height="30%" align="right">
-<p class="intro-text"></p> 
+ <div class="container introduction">
+  <!-- Image with opacity -->
+  <img id="intropic" style="opacity: 0.5;" src="https://img.freepik.com/premium-vector/hacker-e-sport-logo-style_192351-49.jpg" width="30%" height="30%" align="right" alt="Hacker E-sport Logo">
+  
+  <!-- Placeholder for introduction text -->
+  <p class="intro-text text-warning"></p>
+</div>
 
-    
+<script>
+  var initialText = "Salam! I'm Zishan Ahamed Thandar, your friendly neighborhood tech enthusiast from Kolkata, India. I'm your go-to person for PHP, CSS, HTML, JS, jQuery, Bootstrap, WordPress, Linux, networking, and web app pentesting. With a knack for simplifying the complex, I'm here to make your digital dreams a reality. Whether it's designing sleek websites, diving into code, or ensuring your online space is hacker-proof, count me in! I'm all about bridging the gap between tech jargon and everyday language, making it easy for you to navigate the digital realm. So, let's team up and embark on this exciting journey together. Ready to build, secure, and explore the wonders of technology? Let's dive in!";
+  
+  var introText = document.querySelector('.intro-text');
+  introText.textContent = initialText;
+  
+  // Adjust paragraph height for smooth transition
+  var height = introText.offsetHeight;
+  introText.style.height = height + 'px';
+  introText.textContent = '';
+
+  function addTextWithTyping(text, element, speed = 50) {
+      var index = 0;
+      var typingInterval = setInterval(function() {
+          if (text[index] === '<') {
+              var endIndex = text.indexOf('>', index);
+              element.innerHTML += text.substring(index, endIndex + 1);
+              index = endIndex + 1;
+          } else {
+              element.textContent += text[index];
+              index++;
+          }
+          if (index === text.length) {
+              clearInterval(typingInterval);
+          }
+      }, speed);
+  }
+
+  addTextWithTyping(initialText, introText, 50);
+</script>
+
+
+
     <br>
     <!-- Connect -->
     <!-- course 
@@ -670,44 +705,6 @@ document.querySelectorAll('.load-from-below').forEach(function(container) {
 
 </script>
 
-
-
-<script>
-  // Define the initial text
-    var initialText = "Salam! I'm Zishan Ahamed Thandar, your friendly neighborhood tech enthusiast from Kolkata, India. I'm your go-to person for PHP, CSS, HTML, JS, jQuery, Bootstrap, WordPress, Linux, networking, and web app pentesting. With a knack for simplifying the complex, I'm here to make your digital dreams a reality. Whether it's designing sleek websites, diving into code, or ensuring your online space is hacker-proof, count me in! I'm all about bridging the gap between tech jargon and everyday language, making it easy for you to navigate the digital realm. So, let's team up and embark on this exciting journey together. Ready to build, secure, and explore the wonders of technology? Let's dive in!";
-    var introText = document.querySelector('.intro-text');
-
-    // Insert the initial text with opacity 0
-    introText.textContent = initialText;
-
-    // Adjust the paragraph height to fix it
-    var height = introText.offsetHeight;
-    introText.style.height = height + 'px';
-
-    // Remove the initial text
-    introText.textContent = '';
-
-    // Function to add text with typing effect
-    function addTextWithTyping(text, element) {
-        var index = 0;
-        var typingInterval = setInterval(function() {
-            if (text[index] === '<') {
-                var endIndex = text.indexOf('>', index);
-                element.innerHTML += text.substring(index, endIndex + 1);
-                index = endIndex + 1;
-            } else {
-                element.textContent += text[index];
-                index++;
-            }
-            if (index === text.length) {
-                clearInterval(typingInterval);
-            }
-        }, 10); // Typing speed (milliseconds)
-    }
-
-    // Add text with typing effect
-    addTextWithTyping(initialText, introText);
-</script>
 
 <button title="Scroll to Top." onmouseover="this.style.transform = 'scale(1.2)'" onmouseout="this.style.transform = 'scale(1)'"  onclick="let interval = setInterval(() => { window.scrollBy(0, -200); if (window.scrollY === 0) clearInterval(interval); }, 3);" class="btn btn-info btn-floating btn-lg position-fixed bottom-0 end-0 m-3"><i class="fa-solid fa-upload"></i></button>
 
